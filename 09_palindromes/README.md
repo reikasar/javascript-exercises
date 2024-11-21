@@ -11,6 +11,20 @@ A palindrome is a string that is spelled the same both forwards and backwards, u
   - Animal loots foliated detail of stool lamina.
   - A nut for a jar of tuna.
 
+
+const isPalindrome = (string) => {
+  let wordA = string.split("").reverse()
+  let wordB = string.split("");
+  for (let i = 0; i <= string.length / 2; i++) {
+    if (wordA[i] === wordB[0]) {
+      return true;
+    }
+    else {
+      return false
+    };
+  }
+};
+
 ```javascript
 palindromes('racecar') // true
 palindromes('tacos') // false
